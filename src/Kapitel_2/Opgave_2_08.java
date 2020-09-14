@@ -14,7 +14,7 @@ public class Opgave_2_08 {
         Scanner input = new Scanner(System.in);
         System.out.print("Skriv den ønskede tids zone: ");
 
-        long TidsZone = (long) input.nextInt();
+        long TidsZone = input.nextInt();
         long Millisek = System.currentTimeMillis();
         long Sek = Millisek / 1000;
         long SekNu = Sek % 60;
