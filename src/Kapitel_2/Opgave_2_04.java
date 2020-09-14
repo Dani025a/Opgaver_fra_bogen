@@ -10,7 +10,9 @@ public class Opgave_2_04 {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number in square meters: ");
         double sqrmeter = input.nextDouble();
+
         double ping = (sqrmeter * 0.3025);
+
         System.out.println(sqrmeter + " square meters is " + ping + " pings");
     }
 
