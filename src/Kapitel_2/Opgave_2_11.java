@@ -10,17 +10,17 @@ public class Opgave_2_11 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Skriv antal år: ");
-        int Years = input.nextInt();
+        long Years = input.nextLong();
 
-        int Birth = (365 * 24 * 60 *60) / 7;
-        int Immi = (365 * 24 * 60 *60) / 45;
-        int Death = (365 * 24 * 60 *60) / 13;
+        long Birth = (365 * 24 * 60 * 60) / 7;
+        long Immi = (365 * 24 * 60 * 60) / 45;
+        long Death = (365 * 24 * 60 * 60) / 13;
 
-        int CurrentPop = 312032486;
+        long CurrentPop = 312032486;
 
-        int Pop = (Birth + Immi) * Years -  (Death * Years) + CurrentPop;
+        long Pop = (Birth + Immi) * Years -  (Death * Years) + CurrentPop;
 
-        System.out.println("There will be: " + (Birth * Years) + " Born" + "\n" + "There will be: " + Death + " Death" + "\n" +  "There will be: " + Immi + " Immigrants" + "\n" + "\n" + "The population will be at: " + Pop );
+        System.out.println("There will be: " + (Birth * Years) + " Born" + "\n" + "There will be: " + (Death * Years) + " Death" + "\n" +  "There will be: " + (Immi * Years) + " Immigrants" + "\n" + "\n" + "The population will be at: " + Pop );
 
     }
 }
