@@ -19,8 +19,23 @@ public class Opgave_2_06 {
             restNum /= 10;
             int EtNum = restNum % 10;
 
-            int multi = TreNum * tonum * EtNum;
-            System.out.println("Hvis nummeret er: " + num + " Så er multiplikations nummeret: " + multi);
+            if(num == 1000)
+                System.out.println("Hvis nummeret er " + num + " Så er multiplikations nummeret: 0");
+
+            else if((num >= 100) && (num <= 999))   {
+                int multi = TreNum * tonum * EtNum;
+                System.out.println("Hvis nummeret er " + num + " Så er multiplikations nummeret: " + multi);
+            }
+            else if((num >= 10) && (num <= 99))   {
+                int multi1 = TreNum * tonum;
+                System.out.println("Hvis nummeret er " + num + " Så er multiplikations nummeret: " + multi1);
+            }
+            else if((num >= 0) && (num <= 9))   {
+                System.out.println("Hvis nummeret er " + num + " Så er multiplikations nummeret: " + num);
+            }
+            else
+                System.out.println("Fejl du skulle skrive et tal mellem 0 og 1000");
+
         }
     }
 

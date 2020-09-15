@@ -10,10 +10,10 @@ public class Opgave_2_07 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Skriv antal minuter: ");
-        int minuter = input.nextInt();
+        long minuter = input.nextLong();
 
-        int years = (minuter / (60 * 24 * 365));
-        int Dage = (minuter / 60 / 24 % 365);
+        long years = (minuter / (60 * 24 * 365));
+        long Dage = (minuter / 60 / 24 % 365);
 
         System.out.println(minuter + " minuter er omkring: " + years + " År og " + Dage + " Dage.");
     }

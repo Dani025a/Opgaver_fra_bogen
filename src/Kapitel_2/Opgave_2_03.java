@@ -12,8 +12,6 @@ public class Opgave_2_03 {
       double feet = (meter * 3.2786);
 
       System.out.println(meter + " meters is " + feet + " feet");
-
-
    }
 
 }

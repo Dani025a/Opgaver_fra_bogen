@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Opgave_2_01 {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
         System.out.println("indsæt antal miles du ønsker at konventere: ");
         double miles = input.nextDouble();
@@ -16,10 +17,5 @@ public class Opgave_2_01 {
         double kilometer = miles * 1.6;
 
         System.out.println(miles + " miles * 1.6 kilometer = " + kilometer);
-
-
-
-
-
     }
 }
