@@ -3,10 +3,12 @@ package Kapitel_2;
    //     to enter the number of years and display the population after the number of years.
    //     Use the hint in Programming Exercise 1.11 for this program.
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Opgave_2_11 {
     public static void main(String[] args) {
+        DecimalFormat df = new DecimalFormat("###,###,###,###,###,###,###,###,###");
 
         Scanner input = new Scanner(System.in);
         System.out.println("Skriv antal år: ");
@@ -20,7 +22,8 @@ public class Opgave_2_11 {
 
         long Pop = (Birth + Immi) * Years -  (Death * Years) + CurrentPop;
 
-        System.out.println("There will be: " + (Birth * Years) + " Born" + "\n" + "There will be: " + (Death * Years) + " Death" + "\n" +  "There will be: " + (Immi * Years) + " Immigrants" + "\n" + "\n" + "The population will be at: " + Pop );
+
+        System.out.println("There will be: " + df.format(Birth * Years) + " Born" + "\n" + "There will be: " + df.format(Death * Years) + " Death" + "\n" +  "There will be: " + df.format(Immi * Years) + " Immigrants" + "\n" + "\n" + "The population will be at: " + df.format(Pop));
 
     }
 }

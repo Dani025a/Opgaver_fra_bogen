@@ -11,11 +11,15 @@ public class Opgave_2_02 {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter length of the sides and height of the Equilateral:");
         double length = input.nextDouble();
+        // Nu kan man tilføje et input og inputet kalder vi length og det er en double
 
         double areal = (Math.sqrt(3) / 4 * length * length);
+        // Beregningen for arealet
         double volume = (areal * length);
+        //beregninggen for volumen
 
         System.out.println("Arealet er: " + areal + " og volumen er: " + volume);
+        //Vi printer et output, som er arealet og volumen
 
     }
 }

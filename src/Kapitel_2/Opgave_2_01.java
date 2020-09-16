@@ -11,11 +11,14 @@ public class Opgave_2_01 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        System.out.println("indsæt antal miles du ønsker at konventere: ");
+        System.out.println("Indsæt antal miles du ønsker at konventere: ");
         double miles = input.nextDouble();
+        // Vi scanner inputet og laver det til en double, da der kan være komma tal
 
         double kilometer = miles * 1.6;
+        // Regne stykket til at konventere miles til kilometer
 
         System.out.println(miles + " miles * 1.6 kilometer = " + kilometer);
+        //Printer resultatet ud
     }
 }
