@@ -9,11 +9,11 @@ public class Opgave_2_04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number in square meters: ");
-        double sqrmeter = input.nextDouble();
+        double sqrMeter = input.nextDouble();
 
-        double ping = (sqrmeter * 0.3025);
+        double ping = (sqrMeter * 0.3025);
 
-        System.out.println(sqrmeter + " square meters is " + ping + " pings");
+        System.out.println(sqrMeter + " square meters is " + ping + " pings");
     }
 
 }

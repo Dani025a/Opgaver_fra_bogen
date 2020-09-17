@@ -13,16 +13,16 @@ public class Opgave_2_08 {
 
         Scanner input = new Scanner(System.in);
         System.out.print("Skriv den ønskede tids zone: ");
-        long TidsZone = input.nextInt();
+        long tidsZone = input.nextInt();
 
-        long Millisek = System.currentTimeMillis();
-        long Sek = Millisek / 1000;
-        long SekNu = Sek % 60;
-        long Min = Sek / 60;
-        long MinNu = Min % 60;
-        long Timer = Min / 60;
-        long TimerNu = (Timer + TidsZone) % 24;
+        long millisek = System.currentTimeMillis();
+        long sek = millisek / 1000;
+        long sekNu = sek % 60;
+        long min = sek / 60;
+        long minNu = min % 60;
+        long timer = min / 60;
+        long timerNu = (timer + tidsZone) % 24;
 
-        System.out.println("Klokken er nu " + TimerNu + ":" + MinNu + ":" + SekNu + " I tidszonen: " + TidsZone);
+        System.out.println("Klokken er nu " + timerNu + ":" + minNu + ":" + sekNu + " I tidszonen: " + tidsZone);
     }
 }

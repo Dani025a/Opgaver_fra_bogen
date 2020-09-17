@@ -13,8 +13,8 @@ public class Opgave_2_07 {
         long minuter = input.nextLong();
 
         long years = (minuter / (60 * 24 * 365));
-        long Dage = (minuter / 60 / 24 % 365);
+        long dage = (minuter / 60 / 24 % 365);
 
-        System.out.println(minuter + " minuter er omkring: " + years + " År og " + Dage + " Dage.");
+        System.out.println(minuter + " minuter er omkring: " + years + " År og " + dage + " Dage.");
     }
 }

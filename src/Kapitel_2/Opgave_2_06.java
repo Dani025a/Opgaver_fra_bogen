@@ -13,21 +13,21 @@ public class Opgave_2_06 {
             System.out.print("Skriv et nummer mellem 0 og 1000: ");
             int num = input.nextInt();
 
-            int TreNum = num % 10;
+            int treNum = num % 10;
             int restNum = num / 10;
             int tonum = restNum % 10;
             restNum /= 10;
-            int EtNum = restNum % 10;
+            int etNum = restNum % 10;
 
             if(num == 1000)
                 System.out.println("Hvis nummeret er " + num + " Så er multiplikations nummeret: 0");
 
             else if((num >= 100) && (num <= 999))   {
-                int multi = TreNum * tonum * EtNum;
+                int multi = treNum * tonum * etNum;
                 System.out.println("Hvis nummeret er " + num + " Så er multiplikations nummeret: " + multi);
             }
             else if((num >= 10) && (num <= 99))   {
-                int multi1 = TreNum * tonum;
+                int multi1 = treNum * tonum;
                 System.out.println("Hvis nummeret er " + num + " Så er multiplikations nummeret: " + multi1);
             }
             else if((num >= 0) && (num <= 9))   {

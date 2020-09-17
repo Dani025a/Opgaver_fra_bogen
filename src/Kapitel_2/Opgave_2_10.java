@@ -13,17 +13,17 @@ public class Opgave_2_10 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Skriv mængden af vand i kg: ");
-        double M = input.nextDouble();
+        double m = input.nextDouble();
 
         Scanner input1 = new Scanner(System.in);
         System.out.println("Skriv den initiale temperatur:  ");
-        double InTemp = input1.nextDouble();
+        double inTemp = input1.nextDouble();
 
         Scanner input2 = new Scanner(System.in);
         System.out.println("Skriv den endelige temperatur:  ");
-        double FinTemp = input2.nextDouble();
+        double finTemp = input2.nextDouble();
 
-        double Q = (M * (FinTemp - InTemp) * 4184);
+        double Q = (m * (finTemp - inTemp) * 4184);
 
         System.out.println("Du skal bruge  " + Q + " energi");
 

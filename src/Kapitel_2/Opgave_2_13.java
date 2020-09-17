@@ -20,18 +20,18 @@ public class Opgave_2_13 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the Amount: ");
-        double Amount = input.nextDouble();
+        double amount = input.nextDouble();
 
-        double FMonth = Amount * (1 + 0.003125);
-        double SMonth = (Amount + FMonth) * (1 + 0.003125);
-        double TMonth = (Amount + SMonth) * (1 + 0.003125);
-        double FoMonth = (Amount + TMonth) * (1 + 0.003125);
-        double FiMonth = (Amount + FoMonth) * (1 + 0.003125);
-        double SiMonth = (Amount + FiMonth) * (1 + 0.003125);
+        double fMonth = amount * (1 + 0.003125);
+        double sMonth = (amount + fMonth) * (1 + 0.003125);
+        double tMonth = (amount + sMonth) * (1 + 0.003125);
+        double foMonth = (amount + tMonth) * (1 + 0.003125);
+        double FiMonth = (amount + foMonth) * (1 + 0.003125);
+        double SiMonth = (amount + FiMonth) * (1 + 0.003125);
 
-        System.out.println("First month Balance: " + FMonth);
-        System.out.println("Second month Balance: " + SMonth);
-        System.out.println("Third month Balance: " + TMonth);
+        System.out.println("First month Balance: " + fMonth);
+        System.out.println("Second month Balance: " + sMonth);
+        System.out.println("Third month Balance: " + tMonth);
         System.out.println("Sixth month Balance: " + SiMonth);
     }
 }

@@ -8,22 +8,23 @@ import java.util.Scanner;
 
 public class Opgave_2_11 {
     public static void main(String[] args) {
-        DecimalFormat df = new DecimalFormat("###,###,###,###,###,###,###,###,###");
+        DecimalFormat df = new DecimalFormat("###,###,###,###,###,###,###,###,5" +
+                "###");
 
         Scanner input = new Scanner(System.in);
         System.out.println("Skriv antal år: ");
-        long Years = input.nextLong();
+        long years = input.nextLong();
 
-        long Birth = (365 * 24 * 60 * 60) / 7;
-        long Immi = (365 * 24 * 60 * 60) / 45;
-        long Death = (365 * 24 * 60 * 60) / 13;
+        long birth = (365 * 24 * 60 * 60) / 7;
+        long immi = (365 * 24 * 60 * 60) / 45;
+        long death = (365 * 24 * 60 * 60) / 13;
 
-        long CurrentPop = 312032486;
+        long currentPop = 312032486;
 
-        long Pop = (Birth + Immi) * Years -  (Death * Years) + CurrentPop;
+        long pop = (birth + immi) * years -  (death * years) + currentPop;
 
 
-        System.out.println("There will be: " + df.format(Birth * Years) + " Born" + "\n" + "There will be: " + df.format(Death * Years) + " Death" + "\n" +  "There will be: " + df.format(Immi * Years) + " Immigrants" + "\n" + "\n" + "The population will be at: " + df.format(Pop));
+        System.out.println("There will be: " + df.format(birth * years) + " Born" + "\n" + "There will be: " + df.format(death * years) + " Death" + "\n" +  "There will be: " + df.format(immi * years) + " Immigrants" + "\n" + "\n" + "The population will be at: " + df.format(pop));
 
     }
 }

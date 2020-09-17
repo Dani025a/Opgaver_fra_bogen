@@ -14,14 +14,14 @@ public class Opgave_2_12 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the speed: ");
-        double Speed = input.nextDouble();
+        double speed = input.nextDouble();
 
         Scanner input1 = new Scanner(System.in);
         System.out.println("Enter the speed: ");
-        double Accel = input1.nextDouble();
+        double accel = input1.nextDouble();
 
-        double Length = (Speed * Speed) / (2 * Accel);
+        double length = (speed * speed) / (2 * accel);
 
-        System.out.println("The minimum runway length for this airplane is: " + Length);
+        System.out.println("The minimum runway length for this airplane is: " + length);
     }
 }
